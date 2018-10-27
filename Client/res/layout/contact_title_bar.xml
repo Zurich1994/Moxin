@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/re_contactlist"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/tv_contactlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/contactlist"
+            android:textColor="@color/bar_selected"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_contactlist"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/cd"
+            android:visibility="gone"
+            android:src="@color/bar_selected" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_friend_verify"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/tv_friend_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/friend_verify"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_unread"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/unread_count_bg"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_friend_verify"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:contentDescription="@string/cd"
+            android:src="@color/bar_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_group_chat"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/tv_group_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/group_chat"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_group_chat"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/cd"
+            android:src="@color/bar_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

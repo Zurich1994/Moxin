@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/id_marker_info"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CC4e5a6b"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <!-- android:visibility="gone" -->
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:alpha="1.0"
+            android:background="@drawable/orange_tag"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="程序猿"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/text1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:alpha="1.0"
+            android:background="@drawable/green_tag"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="觉皇"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/text2"
+            android:layout_marginLeft="15dp"
+            android:alpha="1.0"
+            android:background="@drawable/blue_tag"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="东方不败"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:alpha="1.0"
+            android:background="@drawable/auto"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitXY"
+            android:text="我不饿，我不饿。我不饿。。。还不开饭"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:typeface="serif" />
+"
+
+        <Button
+            android:id="@+id/play_game"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/text4"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="15dp"
+            android:alpha="1.0"
+            android:background="@drawable/blue_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="开始挑战"
+            android:textColor="#FF8C00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_map_bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/indv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="勇气默示录"
+                    android:textColor="#FFF5EB" />
+
+                <TextView
+                    android:id="@+id/indv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未知地区"
+                    android:textColor="#FFF5EB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map_zan" />
+
+                <TextView
+                    android:id="@+id/indv_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="652"
+                    android:textColor="#FFF5EB" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

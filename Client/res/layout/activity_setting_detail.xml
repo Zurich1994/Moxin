@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_user_pic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:gravity="center_vertical" >
+
+        <include
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/personal_profile"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+
+    </RelativeLayout>
+    <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="#ffffff" />
+			<!-- 头像 --><!-- android:id="@+id/rl_user_pic" -->
+            <RelativeLayout
+                	android:id="@+id/rl_user_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dip"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="头像"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_avatar"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#eda24d"
+                        android:background="@drawable/default_avatar"
+                         />
+ 
+                </RelativeLayout>
+                <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+                 <!-- 昵称 -->
+                <RelativeLayout
+                    android:id="@+id/rl_user_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="昵称"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+                     <TextView
+                        android:id="@+id/tv_user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dip"
+                        android:text="年轻人"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+                </RelativeLayout>
+            <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+                  <!-- 陌信ID -->
+                <RelativeLayout
+                    android:id="@+id/rl_user_mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="陌信ID"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+                     <TextView
+                        android:id="@+id/tv_user_mid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dip"
+                        android:text="111"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+                </RelativeLayout>
+            <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+            <!-- 性别-->
+             <RelativeLayout
+               android:id="@+id/rl_user_gender"
+               android:layout_width="match_parent"
+               android:layout_height="50dip"
+               android:background="@drawable/btn_bottom_selector"
+               android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="性别"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+                    <TextView
+                        android:id="@+id/tv_user_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dip"
+                        android:text="男"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+             </RelativeLayout>
+            <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+           	<!-- 年龄-->
+             <RelativeLayout
+               android:id="@+id/rl_user_age"
+               android:layout_width="match_parent"
+               android:layout_height="50dip"
+               android:background="@drawable/btn_bottom_selector"
+               android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="年龄"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+                      <TextView
+                        android:id="@+id/tv_user_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dip"
+                        android:text="21"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+             </RelativeLayout>
+            <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+           <!-- 地区-->
+            <RelativeLayout
+               android:id="@+id/rl_user_area"
+               android:layout_width="match_parent"
+               android:layout_height="50dip"
+               android:background="@drawable/btn_bottom_selector"
+               android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="地区"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+                    <TextView
+                        android:id="@+id/tv_user_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dip"
+                        android:text="哈尔滨"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+             </RelativeLayout>
+          <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+           <!-- 个性签名-->
+            <RelativeLayout
+               android:id="@+id/rl_user_sign"
+               android:layout_width="match_parent"
+               android:layout_height="50dip"
+               android:background="@drawable/btn_bottom_selector"
+               android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="个性签名"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+                    <TextView
+                        android:id="@+id/tv_user_signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dip"
+                        android:text="好好学习"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+             </RelativeLayout>
+          <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+          <!-- 备注-->
+            
+</LinearLayout>

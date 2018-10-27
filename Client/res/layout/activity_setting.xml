@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg" >
+     <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mytool"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+             />
+
+    </RelativeLayout>
+     <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="#ffffff" />
+                 <!-- 我的账号 -->
+                <RelativeLayout
+                    android:id="@+id/rl_user_nicheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dip"
+                    android:padding="10dip" >
+                    <ImageView 
+				     android:id="@+id/imag"
+				     android:layout_width="50dip"
+				     android:layout_height="50dip"
+				     android:layout_marginLeft="10dip"
+				     android:background="@drawable/default_avatar"></ImageView>
+				 <TextView
+				     android:id="@+id/text"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_marginTop="5dip"
+				     android:layout_marginLeft="70dip"
+				     android:text="连天奇"
+				     android:textColor="#eda24d"
+                     android:textSize="14sp"
+                     android:typeface="serif"
+				     ></TextView>"
+ 
+                </RelativeLayout>
+ 				<!-- 我的账号 -->
+                <RelativeLayout
+                    android:id="@+id/tv_user_acc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip"
+                    
+                     >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="我的账号" 
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:clickable="true"
+                        android:typeface="serif" />
+                     <TextView
+                        android:id="@+id/tv_user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dip"
+                        android:text="1111111111qq.com"
+                        android:textColor="#eda24d"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+ 
+                </RelativeLayout>
+                  <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                  <!-- 个人资料 -->
+               
+                <LinearLayout
+                    android:id="@+id/ll_black_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:clickable="true"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="个人资料"
+                        android:focusable="false"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                     <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+               <!-- 消息与提醒 -->
+                <LinearLayout
+                    android:id="@+id/ll_black_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:clickable="true"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="消息与提醒"
+                        android:focusable="false"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                     <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+                 <!-- 关于软件 -->
+                <LinearLayout
+                    android:id="@+id/ll_black_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:clickable="true"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="关于软件"
+                        android:focusable="false"
+                      android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                     <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+                 <!-- 退出登录 -->
+               <LinearLayout
+                    android:id="@+id/ll_black_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:clickable="true"
+                    android:background="@drawable/btn_bottom_selector"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="退出登录"
+                        android:focusable="false"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                     <!--分割线 -->
+                 <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />  
+</LinearLayout>
+</LinearLayout>
+
